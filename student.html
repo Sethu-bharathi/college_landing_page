@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="./student.html">Student details</a>
+      <a href="./faculty.html">Faculty details</a>
+      <a href="./courses.html">Course details</a>
+    </nav>
+    <hr />
+    <form action="./submitted.html">
+      <fieldset style="width: 0">
+        <legend>Student details</legend>
+        <label for="name" type="text">Name</label>
+        <input id="name" placeholder="Name" />
+        <br />
+        <br />
+        <label for="rollno">Roll no</label>
+        <input
+          id="rollno"
+          type="text"
+          pattern="[0-9]{5}"
+          title="please enter valid number"
+        />
+        <br />
+        <br />
+        <label for="mobile">Mobile no</label>
+        <input
+          id="mobile"
+          type="tel"
+          pattern="[0-9]{10}"
+          title="please enter valid number"
+        />
+        <br />
+        <br />
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" max="2022-03-04" />
+        <br />
+        <br />
+        <label for="dept">Department</label>
+        <input list="dept" />
+        <datalist id="dept">
+          <option value="Computer science and engineering"></option>
+          <option value="Electronics and communication engineering"></option>
+          <option value="Electrical and Electronics engineering"></option>
+          <option value="Mechanical engineering"></option>
+          <option value="Civil engineering"></option>
+        </datalist>
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit"/>
+      </fieldset>
+      <br />
+    </form>
+    <script>
+      function submitted(){
+        alert("Submitted");
+      }
+    </script>
+  </body>
+</html>
