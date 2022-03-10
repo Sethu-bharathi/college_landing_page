@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Dm Sans;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  background: #fff;
+  width: 5px;
+}
+
+.navbar {
+  box-sizing: border-box;
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  width: calc(100vw - 5px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar a {
+  display: inline-block;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  z-index: 100;
+}
+
+/* a::after{
+	position: absolute;	
+	bottom:10px;
+	content: "";
+	width: 100%;
+	height:2px;
+	transition: .5s;
+	background-color:white;
+	transform: 	scale(0,0);
+}
+.navbar a:hover a::after{
+	transform: scale(1,1);
+} */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #1f7ae0;
+}
+.image {
+  height: 6rem;
+  position: absolute;
+  top: -50px;
+  left: 44%;
+}
+#mainpage {
+  margin-top: 2.8rem;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../assets/zhanhui-li-1iuxWsIZ6ko-unsplash.jpg");
+}
+.glass {
+  position: relative;
+  padding: 0 10px;
+  height: 300px;
+  width: min(90%, 600px);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.87);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  border: 3px solid rgba(255, 255, 255, 0.48);
+  text-align: center;
+  text-shadow: 2px 2px 7px black;
+}
+.glass h1{
+	font-size: 3.2rem !important;
+}
+#faculty {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  gap: 3rem;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.department {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.card {
+  height: 390px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  box-sizing: border-box;
+  padding-left: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: -1;
+}
+#student{
+	display: flex;
+	height:100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items:center;
+}
+
+#student fieldset{
+	margin-top: 30px;
+	box-sizing: border-box;
+	padding: 40px 80px;
+	display: flex;
+	justify-content: center;
+	text-align: start;
+	flex-direction: column;
+	min-height:400px;
+	min-width: 400px;
+	border: 2px solid black;
+}
+
+#student input,#student input:focus{
+	color:#000;
+	padding:.2rem;
+	outline:none;
+	border: none;
+	border-radius: .2rem;
+	padding: .3rem;
+}
+.btn{
+	padding: .2rem;
+	background:linear-gradient( #a235eb, #f0f);
+}
+
+.course{
+  box-sizing: border-box;
+  padding-left: 20px;
+  text-align: start;
+  height:200px;
+  width:450px;
+  border-radius: 7px;
+  border: 1px solid rgb(54, 53, 53);
+  margin-top: 20px;padding-top: 25px;
+}
+
+#course_screen{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
